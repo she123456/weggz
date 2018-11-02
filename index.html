@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>哆啦A梦</title>
+		<style>
+			.box-big {
+				width: 700px;
+				height: 900px;
+				margin: 0 auto;
+				background-color: pink;
+			}
+			
+			.headbox {
+				width: 490px;
+				height: 420px;
+				background-color: transparent;
+				overflow: hidden;
+				margin-left: 40px;
+				float: left;
+			}
+			
+			.head {
+				border-radius: 46%;
+				width: 480px;
+				height: 450px;
+				background-color: deepskyblue;
+				float: left;
+				border: solid 3px;
+			}
+			
+			.head-s {
+				border-radius: 46%;
+				width: 400px;
+				height: 380px;
+				background-color: white;
+				margin-top: 75px;
+				margin-left: 41px;
+				float: left;
+				border: solid 3px;
+			}
+			
+			.fangkuangtou {
+				width: 200px;
+				height: 150px;
+				float: left;
+				background-color: transparent;
+				margin-left: 100px;
+				margin-top: -60px;
+			}
+			
+			.hszhong {
+				width: 355px;
+				height: 130px;
+				background-color: transparent;
+				float: left;
+				border-top: none;
+				border-radius: 50%/0 0 100% 100%;
+				margin-top: 90px;
+				margin-left: 19px;
+				border: solid 3px;
+				border-top: none;
+			}
+			
+			.zuoshu1 {
+				width: 130px;
+				background-color: black;
+				-webkit-transform: rotate(15deg);
+				border: solid 2px;
+				margin-top: -230px;
+				margin-left: 20px;
+			}
+			
+			.zuoshu2 {
+				width: 160px;
+				background-color: black;
+				-webkit-transform: rotate(0deg);
+				border: solid 2px;
+				margin-top: 45px;
+				margin-left: -13px;
+			}
+			
+			.zuoshu3 {
+				width: 170px;
+				background-color: black;
+				-webkit-transform: rotate(165deg);
+				border: solid 2px;
+				margin-top: 50px;
+				margin-left: -20px;
+			}
+			
+			.zhongshu {
+				width: 0.1px;
+				height: 218px;
+				background: red;
+				margin-top: -88px;
+				margin-left: 170px;
+				border: solid 2px;
+			}
+			
+			.youshu1 {
+				width: 130px;
+				border: 2px solid;
+				margin-top: -110px;
+				margin-left: 193px;
+				background-color: black;
+				-webkit-transform: rotate(163deg);
+			}
+			
+			.youshu2 {
+				width: 160px;
+				-webkit-transform: rotate(0deg);
+				border: solid 2px;
+				margin-top: 48px;
+				margin-left: 196px;
+				background-color: black;
+			}
+			
+			.youshu3 {
+				width: 185px;
+				-webkit-transform: rotate(15deg);
+				border: solid 2px;
+				margin-top: 50px;
+				margin-left: 190px;
+				background-color: black;
+			}
+			
+			.eye1 {
+				border-radius: 45%;
+				width: 90px;
+				height: 100px;
+				display: inline-block;
+				background-color: whitesmoke;
+				margin-left: -2px;
+				border: solid 3px;
+				margin-right: -4px;
+			}
+			
+			.eye1-1-box {
+				width: 65px;
+				height: 50px;
+				background-color: transparent;
+				margin-left: 25px;
+				float: left;
+				overflow: hidden;
+				margin-top: 12px;
+			}
+			
+			.eye1-1 {
+				width: 45px;
+				height: 70px;
+				border-radius: 49%;
+				border: solid 6px;
+				margin-top: 20px;
+				margin-left: -0px;
+			}
+			
+			.eye2-1-box {
+				width: 65px;
+				height: 50px;
+				background-color: transparent;
+				margin-left: 7px;
+				float: left;
+				overflow: hidden;
+				margin-top: 12px;
+			}
+			
+			.eye2-1 {
+				width: 45px;
+				height: 70px;
+				border-radius: 49%;
+				border: solid 6px;
+				margin-top: 20px;
+				margin-left: -0px;
+			}
+			
+			.eye2 {
+				border-radius: 45%;
+				width: 90px;
+				height: 100px;
+				display: inline-block;
+				margin-left: -2px;
+				background-color: white;
+				border: solid 3px;
+			}
+			
+			.nose {
+				width: 60px;
+				height: 60px;
+				border: solid 3px;
+				border-radius: 48%;
+				background-color: red;
+				margin-left: 60px;
+				margin-top: -22px;
+			}
+			
+			.nose1 {
+				width: 18px;
+				height: 18px;
+				border: solid 3px;
+				border-radius: 48%;
+				background-color: white;
+				margin-left: 13px;
+				margin-top: 5px;
+			}
+			
+			.h1 {
+				width: 370px;
+				height: 22px;
+				border-radius: 27%;
+				background-color: red;
+				float: left;
+				position: relative;
+				border: 3px solid;
+				margin-top: -10px;
+				margin-left: 90px;
+				z-index: 4;
+			}
+			
+			.body1 {
+				width: 380px;
+				height: 450px;
+				background-color: deepskyblue;
+				float: left;
+				margin-top: -97px;
+				z-index: 3;
+				border: 3px solid;
+				position: relative;
+				margin-left: 3px;
+				border-radius: 45%;
+			}
+			
+			.yuanleft {
+				width: 100px;
+				height: 100px;
+				float:left;
+				border: 3px solid;
+				margin-top: -200px;
+				margin-left: -70px;
+				border-radius: 50%;
+				background-color: white;
+			}
+			.leftbi{
+				width: 120px;
+				height: 130px;
+				background-color: deepskyblue;
+				-webkit-transform: rotate(28deg);
+				margin-top: -100px;
+				margin-left: 60px;
+				border:3px solid;
+				border-radius: 45px 35px 25px 15px;
+			}
+			.yuanright {
+				width: 100px;
+				height: 100px;
+				float:left;
+				border: 3px solid;
+				margin-top: -200px;
+				margin-left: 174px;
+				border-radius: 50%;
+				background-color: white;
+			}
+			.rightbi{
+				width: 120px;
+				height: 130px;
+				background-color: deepskyblue;
+				-webkit-transform: rotate(68deg);
+				margin-top: -100px;
+				margin-left: -95px;
+				border:3px solid;
+				border-radius: 43px 15px 35px 35px;
+			}
+			.zhongyuan {
+				width: 300px;
+				height: 270px;
+				border-radius: 49%;
+				border: 3px solid;
+				border-radius: 120px 120px 120px 120px;
+				margin-left: 40px;
+				margin-top: 70px;
+				background-color: white;
+			}
+			
+			.zyuanxia {
+				width: 230px;
+				height: 110px;
+				background-color: white;
+				border: 3px solid;
+				margin-top: 130px;
+				margin-left: 35px;
+				border-radius: 0 0 96px 96px;
+			}
+			
+			.lingdangbix {
+				width: 90px;
+				height: 90px;
+				background-color: yellow;
+				border: 3px solid;
+				margin-left: 146px;
+				margin-top: 2px;
+				border-radius: 49%;
+			}
+			
+			.ldangheng {
+				width: 88px;
+				height: 6px;
+				background-color: yellow;
+				margin-top: 16px;
+				margin-left: -3px;
+				border-radius: 40%;
+				border: 3px solid;
+			}
+			
+			.ldangyuan {
+				width: 17px;
+				height: 17px;
+				background-color: goldenrod;
+				border: 3px solid;
+				border-radius: 50%;
+				margin-left: 35px;
+				margin-top: 15px;
+			}
+			
+			.langshu {
+				width: 0px;
+				height: 22px;
+				border: 2px solid;
+				margin-top: -2px;
+				margin-left: 43px;
+			}
+			
+			.bodybox {
+				width: 396px;
+				height: 300px;
+				background-color: transparent;
+				float: left;
+				position: relative;
+				overflow: hidden;
+				margin-left: 90px;
+			}
+			
+			.footleft {
+				width: 200px;
+				height: 100px;
+				border: 3px solid;
+				margin-top: 298px;
+				float: left;
+				margin-left: -410px;
+				border-radius: 65px 10px 10px 65px;
+				background-color: white;
+			}
+			
+			.footright {
+				width: 200px;
+				height: 100px;
+				border: 3px solid;
+				margin-top: 298px;
+				float: left;
+				margin-left: -205px;
+				border-radius: 10px 65px 65px 10px;
+				background-color: white;
+			}
+			.x1{
+				margin-left: 183px;
+				height: 19px;
+				border:3px solid;
+				width: 0px;
+				float:left;
+				margin-top: -1px;
+			}
+			.x2{
+				float:left;
+				width: 30px;
+				height: 0px;
+				border:3px solid;
+				margin-left: 170px;
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box-big">
+			<div class="headbox">
+
+				<div class="head">
+					<div class="head-s">
+						<div class="fangkuangtou">
+							<div class="eye1">
+								<div class="eye1-1-box">
+									<div class="eye1-1"></div>
+								</div>
+							</div>
+							<div class="eye2">
+								<div class="eye2-1-box">
+									<div class="eye2-1"></div>
+								</div>
+							</div>
+							<div class="nose">
+								<div class="nose1"></div>
+							</div>
+						</div>
+
+						<div class="hszhong">
+							<div class="zhongshu"></div>
+							<div class="zuoshu1"></div>
+							<div class="zuoshu2"></div>
+							<div class="zuoshu3"></div>
+							<div class="youshu1"></div>
+							<div class="youshu2"></div>
+							<div class="youshu3"></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="h1">
+				<div class="lingdangbix">
+					<div class="ldangheng"></div>
+					<div class="ldangyuan"></div>
+					<div class="langshu"></div>
+				</div>
+
+			</div>
+			
+			<div class="bodybox">
+				<div class="body1">
+					<div class="zhongyuan">
+						<div class="zyuanxia"></div>
+
+					</div>
+						<div class="x2"></div>
+					<div class="x1"></div>
+				</div>
+			</div>
+			
+			<div class="footleft">
+				<div class="yuanleft">
+					<div class="leftbi"></div>
+				</div>
+			</div>
+			<div class="footright">
+				<div class="yuanright">
+					<div class="rightbi"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
